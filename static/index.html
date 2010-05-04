@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Orange Messenger</title>
+</head>
+<link rel="stylesheet" type="text/css" href="orange_messenger.css" />
+<body>
+	<div class="im">
+		<!-- Register: Initially displayed. -->
+		<div id="register" class="register">
+			<form>
+				<label>Register:</label>
+				<input type="text" name="reg_name" value="">
+				<input type="button" onclick="regClick(this.form)" value="Register">
+			</form>
+		</div>
+		<!-- Messages: Displayed once registered -->
+		<div id="messages" class="messages hide">
+			<!-- TODO: Remove this. -->
+			<!--<div class="info">
+				<img style="float:left; padding:3px;" src="http://www.gravatar.com/avatar/e119f1f15680dca15b389a26d2f2214e?s=35">
+				<span class="msg_date">TIMEDATE</span>
+				<label style="color: blue">Jamie: </label>
+				<span class="msg_error">Unable to registerfdsfdsfsdfsd dsf sdfj sdkfjdskjf ksdjf lksdjflksjdflkjsd lfkj sdlkfj sdlkfj </span>
+			</div>
+			<hr>-->						
+			<!-- Messages get inserted here. -->
+		</div>
+		<div class="msg_input">
+			<form onSubmit="return send_msg($('#msg_input'));">
+				<input class="ti" id="msg_input" type="text">
+			</form>
+		</div>
+	</div>
+
+	<!-- External libs -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="ejs_production.js"></script>
+
+	<!-- Internal libs -->
+	<script type="text/javascript" src="console.js"></script>
+	<script type="text/javascript" src="util.js"></script>
+	<script type="text/javascript" src="orange_messenger.js"></script>
+	<script>
+		// Initialize.
+		om = null;
+		$(document).ready(function() {
+			om = new OrangeMessenger({
+				registerDiv: $('.register'),
+				messagesDiv: $('.messages')
+			});
+
+			// Mark as Initialized
+			om.addLog('info', "Initialized");
+		})
+
+		function send_msg(msg) {
+			return om.send_msg(msg)
+		}
+
+		function regClick(form) {
+			if(!om) return;
+			reg_name = form.reg_name.value
+			om.register(reg_name)
+		}
+	</script>
+</body>
+</html>

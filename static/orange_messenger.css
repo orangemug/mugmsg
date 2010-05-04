@@ -1,0 +1,83 @@
+		form {
+			margin: 0px;
+		}
+
+		.hide {
+			display: none;
+		}
+
+		.msg_error {
+			background-color: red;
+			color: white;
+		}
+
+		.msg_info {
+			background-color: green;
+			color: white;
+		}
+
+		.im {
+			width: 300px;
+			background-color: #808080;
+			padding: 4px 4px 4px 4px;
+		}
+
+		.register {
+			height: 400px;
+		}
+
+		.messages {
+			background-color: #fff;
+			height: 400px;
+			overflow:auto;
+			overflow-x: hidden;  /* Hide horz scrollbar */
+			font-size: 0.9em;
+			padding: 5px 5px 5px 5px;
+		}
+		.messages hr {
+			border: 0px;
+			height: 1px;
+			background-color: #ccc;
+			color: #f00;
+			width: 80%;
+			clear: both;
+		}
+
+		.messages .msg label {
+			margin-right:10px;
+		}
+
+		.msg_input {
+			background-color: #808080;
+			padding: 1px 1px 1px 1px;
+			padding-top: 5px;
+		}
+
+		.msg_input .ti {
+			width: 100%;
+			background:#FFFFFF url(chevron_left_orange.png) no-repeat scroll left center;
+			border-color:#CCCCCC -moz-use-text-color -moz-use-text-color #CCCCCC;
+			border-style:solid none none solid;
+			border-width:1px medium medium 1px;
+			margin:0;
+			padding-left:16px;
+		}
+
+		.msg_date {
+			float: right;
+			background-color: #808080;
+			color: #FF8C00;
+			font-size: 0.75em;
+		}
+
+		.msg {
+			word-wrap: break-word;  /* Put in a word break where nessecary */
+		}
+
+		.avatar {
+			float: left;
+			padding-right: 4px;
+			padding-bottom: 4px;
+			width: 35px;
+			height: 35px;
+		}
