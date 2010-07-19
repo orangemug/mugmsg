@@ -1,5 +1,5 @@
 # MugMsg
-A simple example of messenger written in node.js. This is just a prototype and not no way near a complete chat client (although hopefully one day it will be...).
+A simple example of messenger written in node.js. This is just a prototype and not no way near a complete chat client, although hopefully one day it will be...
 
 ## What it does so far
 
