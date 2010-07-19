@@ -80,7 +80,7 @@ function getGravatarUrl(email, size) {
 
 var reqMgr = new ReqMgr();
 initServer(8000, reqMgr, {
-    portMax: 8000
+    portMax: 8002
 })
 
 
