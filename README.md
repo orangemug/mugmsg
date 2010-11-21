@@ -7,7 +7,7 @@ A simple example of messenger written in node.js. This is just a prototype and n
  * Sends messages via the long polling technique
  * Adds in user avatar via gravatar (for future openid support)
 
-![mugmsg_image](http://github.com/orangemug/mugmsg/raw/master/screenshots/example.png)
+![mugmsg_image](https://github.com/orangemug/mugmsg/raw/master/screenshots/example.png)
 
 
 ## The future...
